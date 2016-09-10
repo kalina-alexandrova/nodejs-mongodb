@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+    h1.
+        Infophoto #{user._id}
+    p E-mail: #{user.email}
+    p First Name: #{user.forename}
+    p Last Name: #{user.surname}
+    p Badge: #{user.badge}
+    p DOB: #{userdob}
+    p Is a student: #{user.isstudent}

@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+	h1.
+		User ID #{user._id}
+	form(action='/users/#{user._id}/edit',method='post',name='updateuser',enctype='application/x-www-form-urlencoded')
+		p E-mail:
+			input#inputEmail(type='text', value='#{user.email}', name='email')
+		p First Name:
+			input#inputFirstName(type='text', value='#{user.forename}', name='forename')
+		p Last Name:
+			input#inputLastName(type='text', value='#{user.surname}', name='surname')
+		p Badge:
+			input#inputBadge(type='number', value='#{user.badge}', name='badge')
+		p DOB:
+			input#inputDob(type='date', value='#{userdob}', name='dob')
+		p Are you a Student?:
+			input#inputiIsStudent(type='checkbox', name='isstudent', checked=('#{user.isstudent}'==='true' ? "checked" : undefined))
+		p
+			input(type='hidden',value='PUT',name='_method')
+		p
+			button#btnSubmit(type='submit').
+				Update

@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+	h1.
+		#{title}
+	form#formAddUser(name="adduser",method="post",action="/users")
+		p E-mail: 
+			input#inputEmail(type="text", placeholder="ex. user@gmail.com", name="email")
+		p First Name: 
+			input#inputFirstName(type="text", placeholder="ex. John", name="forename")
+		p Last Name: 
+			input#inputLastName(type="text", placeholder="ex. Smith", name="surname")
+		p Badge:
+			input#inputBadge(type="number", placeholder="ex. 123456", name="badge")
+		p DOB: 
+			input#inputDob(type="date", name="dob")
+		p Are You A Student?: 
+			input#inputIsStudent(type="checkbox", name="isstudent")
+		p
+			button#btnSubmit(type="submit") send

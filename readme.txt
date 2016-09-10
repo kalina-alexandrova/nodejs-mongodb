@@ -1,0 +1,1 @@
+mongod --dbpath e:\nodejs\nodewebapp\db --port 27017 --logpath e:\nodejs\nodewebapp\logs\mongod.log

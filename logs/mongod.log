@@ -1,0 +1,137 @@
+2016-09-09T00:19:45.761+0300 I CONTROL  [initandlisten] MongoDB starting : pid=7788 port=27017 dbpath=e:\nodejs\nodewebapp\db 64-bit host=DESKTOP-FHHNB74
+2016-09-09T00:19:45.762+0300 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2016-09-09T00:19:45.762+0300 I CONTROL  [initandlisten] db version v3.2.9
+2016-09-09T00:19:45.762+0300 I CONTROL  [initandlisten] git version: 22ec9e93b40c85fc7cae7d56e7d6a02fd811088c
+2016-09-09T00:19:45.762+0300 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1p-fips 9 Jul 2015
+2016-09-09T00:19:45.762+0300 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-09-09T00:19:45.762+0300 I CONTROL  [initandlisten] modules: none
+2016-09-09T00:19:45.762+0300 I CONTROL  [initandlisten] build environment:
+2016-09-09T00:19:45.763+0300 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2016-09-09T00:19:45.763+0300 I CONTROL  [initandlisten]     distarch: x86_64
+2016-09-09T00:19:45.763+0300 I CONTROL  [initandlisten]     target_arch: x86_64
+2016-09-09T00:19:45.763+0300 I CONTROL  [initandlisten] options: { net: { port: 27017 }, storage: { dbPath: "e:\nodejs\nodewebapp\db" }, systemLog: { destination: "file", path: "e:\nodejs\nodewebapp\logs\mongod.log" } }
+2016-09-09T00:19:45.763+0300 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2016-09-09T00:19:46.373+0300 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2016-09-09T00:19:46.373+0300 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'e:/nodejs/nodewebapp/db/diagnostic.data'
+2016-09-09T00:19:46.460+0300 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-09-09T00:19:53.196+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50352 #1 (1 connection now open)
+2016-09-09T00:19:53.312+0300 I COMMAND  [conn1] command admin.$cmd command: whatsmyuri { whatsmyuri: 1 } keyUpdates:0 writeConflicts:0 numYields:0 reslen:47 locks:{} protocol:op_command 115ms
+2016-09-09T00:20:34.666+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50355 #2 (2 connections now open)
+2016-09-09T00:20:34.666+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50356 #3 (3 connections now open)
+2016-09-09T00:21:12.247+0300 I COMMAND  [conn2] command users.users command: insert { insert: "users", documents: [ { isstudent: true, badge: 12356, surname: "test", email: "test", forename: "test", _id: ObjectId('57d1d64718d6a01b304735af'), dob: new Date(1472774400000), __v: 0 } ], ordered: false, writeConcern: { w: 1 } } ninserted:1 keyUpdates:0 writeConflicts:0 numYields:0 reslen:40 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { W: 1 } } } protocol:op_query 153ms
+2016-09-09T00:21:30.359+0300 I COMMAND  [conn1] command users.users command: find { find: "users", filter: {} } planSummary: COLLSCAN keysExamined:0 docsExamined:1 cursorExhausted:1 keyUpdates:0 writeConflicts:0 numYields:0 nreturned:1 reslen:225 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_command 130ms
+2016-09-09T00:30:34.392+0300 I NETWORK  [conn2] end connection 127.0.0.1:50355 (2 connections now open)
+2016-09-09T00:30:34.392+0300 I NETWORK  [conn3] end connection 127.0.0.1:50356 (2 connections now open)
+2016-09-09T00:30:43.587+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50508 #4 (2 connections now open)
+2016-09-09T00:30:43.587+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50509 #5 (3 connections now open)
+2016-09-09T00:34:38.677+0300 I NETWORK  [conn4] end connection 127.0.0.1:50508 (2 connections now open)
+2016-09-09T00:34:38.677+0300 I NETWORK  [conn5] end connection 127.0.0.1:50509 (2 connections now open)
+2016-09-09T00:34:47.573+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50540 #6 (2 connections now open)
+2016-09-09T00:34:47.573+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50541 #7 (3 connections now open)
+2016-09-09T00:46:28.054+0300 I NETWORK  [conn7] end connection 127.0.0.1:50541 (2 connections now open)
+2016-09-09T00:46:28.054+0300 I NETWORK  [conn6] end connection 127.0.0.1:50540 (2 connections now open)
+2016-09-09T00:46:59.445+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50578 #8 (2 connections now open)
+2016-09-09T00:46:59.446+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50579 #9 (3 connections now open)
+2016-09-09T00:48:02.295+0300 I NETWORK  [conn8] end connection 127.0.0.1:50578 (2 connections now open)
+2016-09-09T00:48:02.295+0300 I NETWORK  [conn9] end connection 127.0.0.1:50579 (2 connections now open)
+2016-09-09T00:48:10.063+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50581 #10 (2 connections now open)
+2016-09-09T00:48:10.063+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50582 #11 (3 connections now open)
+2016-09-09T00:49:28.056+0300 I NETWORK  [conn10] end connection 127.0.0.1:50581 (2 connections now open)
+2016-09-09T00:49:28.056+0300 I NETWORK  [conn11] end connection 127.0.0.1:50582 (2 connections now open)
+2016-09-09T00:49:34.959+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50585 #12 (2 connections now open)
+2016-09-09T00:49:34.959+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50586 #13 (3 connections now open)
+2016-09-09T00:50:13.757+0300 I NETWORK  [conn12] end connection 127.0.0.1:50585 (2 connections now open)
+2016-09-09T00:50:13.757+0300 I NETWORK  [conn13] end connection 127.0.0.1:50586 (2 connections now open)
+2016-09-09T00:50:20.147+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50588 #14 (2 connections now open)
+2016-09-09T00:50:20.147+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50589 #15 (3 connections now open)
+2016-09-09T00:55:21.542+0300 I NETWORK  [conn14] end connection 127.0.0.1:50588 (2 connections now open)
+2016-09-09T00:55:21.542+0300 I NETWORK  [conn15] end connection 127.0.0.1:50589 (2 connections now open)
+2016-09-09T00:55:33.596+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50596 #16 (2 connections now open)
+2016-09-09T00:55:33.596+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50597 #17 (3 connections now open)
+2016-09-09T00:56:44.587+0300 I NETWORK  [conn16] end connection 127.0.0.1:50596 (2 connections now open)
+2016-09-09T00:56:44.587+0300 I NETWORK  [conn17] end connection 127.0.0.1:50597 (2 connections now open)
+2016-09-09T00:56:56.749+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50599 #18 (2 connections now open)
+2016-09-09T00:56:56.749+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50600 #19 (3 connections now open)
+2016-09-09T00:58:30.114+0300 I NETWORK  [conn18] end connection 127.0.0.1:50599 (2 connections now open)
+2016-09-09T00:58:30.114+0300 I NETWORK  [conn19] end connection 127.0.0.1:50600 (2 connections now open)
+2016-09-09T00:58:43.495+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50602 #20 (2 connections now open)
+2016-09-09T00:58:43.496+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50603 #21 (3 connections now open)
+2016-09-09T01:00:17.877+0300 I NETWORK  [conn20] end connection 127.0.0.1:50602 (2 connections now open)
+2016-09-09T01:00:17.877+0300 I NETWORK  [conn21] end connection 127.0.0.1:50603 (2 connections now open)
+2016-09-09T01:00:27.115+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50630 #22 (2 connections now open)
+2016-09-09T01:00:27.115+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50631 #23 (3 connections now open)
+2016-09-09T01:11:30.933+0300 I NETWORK  [conn23] end connection 127.0.0.1:50631 (2 connections now open)
+2016-09-09T01:11:30.933+0300 I NETWORK  [conn22] end connection 127.0.0.1:50630 (2 connections now open)
+2016-09-09T01:11:37.898+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50682 #24 (2 connections now open)
+2016-09-09T01:11:37.898+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50683 #25 (3 connections now open)
+2016-09-09T01:13:00.910+0300 I NETWORK  [conn24] end connection 127.0.0.1:50682 (2 connections now open)
+2016-09-09T01:13:00.910+0300 I NETWORK  [conn25] end connection 127.0.0.1:50683 (2 connections now open)
+2016-09-09T01:13:08.397+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50687 #26 (2 connections now open)
+2016-09-09T01:13:08.397+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50688 #27 (3 connections now open)
+2016-09-09T01:15:55.891+0300 I NETWORK  [conn26] end connection 127.0.0.1:50687 (2 connections now open)
+2016-09-09T01:15:55.891+0300 I NETWORK  [conn27] end connection 127.0.0.1:50688 (2 connections now open)
+2016-09-09T01:16:03.100+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50692 #28 (2 connections now open)
+2016-09-09T01:16:03.100+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50693 #29 (3 connections now open)
+2016-09-09T01:20:36.976+0300 I NETWORK  [conn28] end connection 127.0.0.1:50692 (2 connections now open)
+2016-09-09T01:20:36.976+0300 I NETWORK  [conn29] end connection 127.0.0.1:50693 (2 connections now open)
+2016-09-09T01:20:45.812+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50782 #30 (2 connections now open)
+2016-09-09T01:20:45.812+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50783 #31 (3 connections now open)
+2016-09-09T01:22:33.291+0300 I NETWORK  [conn30] end connection 127.0.0.1:50782 (2 connections now open)
+2016-09-09T01:22:33.291+0300 I NETWORK  [conn31] end connection 127.0.0.1:50783 (2 connections now open)
+2016-09-09T01:22:42.379+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50790 #32 (2 connections now open)
+2016-09-09T01:22:42.380+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50791 #33 (3 connections now open)
+2016-09-09T01:35:32.328+0300 I NETWORK  [conn32] end connection 127.0.0.1:50790 (2 connections now open)
+2016-09-09T01:35:32.328+0300 I NETWORK  [conn33] end connection 127.0.0.1:50791 (2 connections now open)
+2016-09-09T01:35:42.515+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50817 #34 (2 connections now open)
+2016-09-09T01:35:42.515+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50818 #35 (3 connections now open)
+2016-09-09T01:46:02.993+0300 I NETWORK  [conn34] end connection 127.0.0.1:50817 (2 connections now open)
+2016-09-09T01:46:02.993+0300 I NETWORK  [conn35] end connection 127.0.0.1:50818 (2 connections now open)
+2016-09-09T01:46:10.304+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50828 #36 (2 connections now open)
+2016-09-09T01:46:10.304+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50829 #37 (3 connections now open)
+2016-09-09T01:46:20.763+0300 I COMMAND  [conn36] command users.users command: find { find: "users", filter: { _id: null }, limit: 1, batchSize: 1, singleBatch: true } planSummary: IXSCAN { _id: 1 } keysExamined:0 docsExamined:0 cursorExhausted:1 keyUpdates:0 writeConflicts:0 numYields:0 nreturned:0 reslen:117 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_query 219ms
+2016-09-09T01:46:20.803+0300 I NETWORK  [conn36] end connection 127.0.0.1:50828 (2 connections now open)
+2016-09-09T01:46:20.803+0300 I NETWORK  [conn37] end connection 127.0.0.1:50829 (2 connections now open)
+2016-09-09T01:49:00.463+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50870 #38 (2 connections now open)
+2016-09-09T01:49:00.464+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50871 #39 (3 connections now open)
+2016-09-09T01:49:17.701+0300 I NETWORK  [conn38] end connection 127.0.0.1:50870 (2 connections now open)
+2016-09-09T01:49:17.701+0300 I NETWORK  [conn39] end connection 127.0.0.1:50871 (2 connections now open)
+2016-09-09T01:53:17.878+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50916 #40 (2 connections now open)
+2016-09-09T01:53:17.878+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50917 #41 (3 connections now open)
+2016-09-09T01:53:36.613+0300 I NETWORK  [conn40] end connection 127.0.0.1:50916 (2 connections now open)
+2016-09-09T01:53:36.613+0300 I NETWORK  [conn41] end connection 127.0.0.1:50917 (2 connections now open)
+2016-09-09T01:57:40.267+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50959 #42 (2 connections now open)
+2016-09-09T01:57:40.267+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50960 #43 (3 connections now open)
+2016-09-09T01:57:57.227+0300 I NETWORK  [conn42] end connection 127.0.0.1:50959 (2 connections now open)
+2016-09-09T01:57:57.227+0300 I NETWORK  [conn43] end connection 127.0.0.1:50960 (2 connections now open)
+2016-09-09T02:00:25.345+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51020 #44 (2 connections now open)
+2016-09-09T02:00:25.346+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51021 #45 (3 connections now open)
+2016-09-09T02:00:37.756+0300 I COMMAND  [conn44] command users.users command: find { find: "users", filter: { _id: ObjectId('57d1d64718d6a01b304735af') }, limit: 1, batchSize: 1, singleBatch: true } planSummary: IDHACK keysExamined:1 docsExamined:1 idhack:1 cursorExhausted:1 keyUpdates:0 writeConflicts:0 numYields:0 nreturned:1 reslen:240 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 1 } } } protocol:op_query 152ms
+2016-09-09T02:13:48.157+0300 I NETWORK  [conn45] end connection 127.0.0.1:51021 (2 connections now open)
+2016-09-09T02:13:48.157+0300 I NETWORK  [conn44] end connection 127.0.0.1:51020 (2 connections now open)
+2016-09-09T02:13:55.593+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51180 #46 (2 connections now open)
+2016-09-09T02:13:55.593+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51181 #47 (3 connections now open)
+2016-09-09T02:14:37.310+0300 I COMMAND  [conn46] command users.$cmd command: update { update: "users", updates: [ { q: { _id: ObjectId('57d1d64718d6a01b304735af') }, u: { $set: { email: "test123", forename: "test123", surname: "hello" } }, upsert: false, multi: false } ], ordered: true, writeConcern: { w: 1 } } keyUpdates:0 writeConflicts:0 numYields:0 reslen:55 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 210ms
+2016-09-09T02:15:06.536+0300 I WRITE    [conn46] remove users.users query: { _id: ObjectId('57d1d64718d6a01b304735af') } ndeleted:1 keyUpdates:0 writeConflicts:0 numYields:1 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 2 } } } 104ms
+2016-09-09T02:15:06.536+0300 I COMMAND  [conn46] command users.$cmd command: delete { delete: "users", deletes: [ { q: { _id: ObjectId('57d1d64718d6a01b304735af') }, limit: 0 } ], ordered: true, writeConcern: { w: 1 } } keyUpdates:0 writeConflicts:0 numYields:0 reslen:40 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 104ms
+2016-09-09T02:23:10.135+0300 I NETWORK  [conn46] end connection 127.0.0.1:51180 (2 connections now open)
+2016-09-09T02:23:10.135+0300 I NETWORK  [conn47] end connection 127.0.0.1:51181 (2 connections now open)
+2016-09-09T02:23:16.925+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51199 #48 (2 connections now open)
+2016-09-09T02:23:16.925+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51200 #49 (3 connections now open)
+2016-09-09T02:27:39.396+0300 I NETWORK  [conn48] end connection 127.0.0.1:51199 (2 connections now open)
+2016-09-09T02:27:39.396+0300 I NETWORK  [conn49] end connection 127.0.0.1:51200 (2 connections now open)
+2016-09-09T02:27:48.377+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51212 #50 (2 connections now open)
+2016-09-09T06:29:18.837+0300 I NETWORK  [conn50] end connection 127.0.0.1:51212 (1 connection now open)
+2016-09-09T16:33:15.144+0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61753 #51 (2 connections now open)
+2016-09-09T16:42:33.287+0300 I NETWORK  [conn51] end connection 127.0.0.1:61753 (1 connection now open)
+2016-09-09T23:23:56.551+0300 I CONTROL  [thread1] CTRL_CLOSE_EVENT signal
+2016-09-09T23:23:56.551+0300 I CONTROL  [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2016-09-09T23:23:56.568+0300 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2016-09-09T23:23:56.695+0300 I CONTROL  [consoleTerminate] now exiting
+2016-09-09T23:23:56.695+0300 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2016-09-09T23:23:56.695+0300 I NETWORK  [consoleTerminate] closing listening socket: 568
+2016-09-09T23:23:56.703+0300 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2016-09-09T23:23:56.703+0300 I NETWORK  [consoleTerminate] shutdown: going to close sockets...
+2016-09-09T23:23:56.704+0300 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2016-09-09T23:23:56.704+0300 I NETWORK  [conn1] end connection 127.0.0.1:50352 (0 connections now open)
+2016-09-09T23:23:57.150+0300 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2016-09-09T23:23:57.150+0300 I CONTROL  [consoleTerminate] dbexit:  rc: 12
